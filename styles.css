@@ -793,6 +793,8 @@ footer {
 }
 .band-cream .token-fact { background: var(--white); }
 .solution-card .prop-link { display: inline-block; margin-top: 1.25rem; }
+/* The note an asterisk in the copy points to */
+.footnote { text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem; }
 
 /* ── THE TWO PAGES ── */
 /* Under the home hero: the way across for a business whose books are elsewhere */
