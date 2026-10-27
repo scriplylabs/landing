@@ -793,6 +793,8 @@ footer {
 }
 .band-cream .token-fact { background: var(--white); }
 .solution-card .prop-link { display: inline-block; margin-top: 1.25rem; }
+/* The note an asterisk in the copy points to */
+.footnote { text-align: center; font-size: 0.8rem; color: var(--muted); margin-top: 0.75rem; }
 
 /* ── THE TWO PAGES ── */
 /* Under the home hero: the way across for a business whose books are elsewhere */
@@ -909,6 +911,35 @@ footer {
 .token-band h2 { font-family: var(--serif); font-weight: 400; font-size: 1.6rem; color: #fff; margin-bottom: 0.25rem; }
 .token-band p { color: rgba(255,255,255,0.7); font-size: 0.95rem; max-width: 560px; }
 
+/* ── BLOCKCHAINS ── */
+.chains-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.solution-card.is-supported { border-color: var(--brand); }
+.chain-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.25rem;
+}
+.chain-card-top .coming-soon-badge { margin-bottom: 0; }
+.chain-mark { width: 40px; height: 40px; display: block; flex: none; }
+.supported-badge {
+  display: inline-block;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: 999px;
+}
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
@@ -916,7 +947,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .solutions-grid, .solutions-grid-two, .props-grid, .reviews-grid, .roadmap-grid, .token-facts, .report-layout { grid-template-columns: 1fr; }
+  .solutions-grid, .solutions-grid-two, .chains-grid, .props-grid, .reviews-grid, .roadmap-grid, .token-facts, .report-layout { grid-template-columns: 1fr; }
   .flow-steps { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .nav-toggle { display: inline-flex; }
