@@ -33,7 +33,7 @@
 
   <!-- LAUNCH BANNER -->
   <div class="launch-banner">
-    <strong>Pre-launch.</strong> <strong>Free forever for freelancers and small teams.</strong> Digital asset payments, wallets and invoice tokenization are always free.
+    <strong>Pre-launch.</strong> <strong>Invoice tokenization is always free,</strong> and so are wallets and digital asset payments.
     <a href="https://app.scriply.io">Try It For Free →</a>
   </div>
 
@@ -44,8 +44,8 @@
       <svg width="20" height="20" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
     </button>
     <ul id="nav-links">
+      <li><a href="#kyb">KYB Standard</a></li>
       <li><a href="#tokenization">Tokenization</a></li>
-      <li><a href="#attestation">Attestation</a></li>
       <li><a href="#report">Daily Report</a></li>
       <li><a href="/crypto-subledger">Subledger</a></li>
       <li><a href="/accounting">Accounting</a></li>
@@ -118,25 +118,37 @@
     </div>
   </section>
 
-  <!-- WHY TOKENIZE -->
-  <section class="solutions band-cream" id="why">
+  <!-- KYB STANDARD -->
+  <section class="solutions band-cream" id="kyb">
     <div class="section-header">
-      <span class="section-eyebrow">Why Tokenize</span>
-      <h2 class="section-title">Put your real-world<br />assets on-chain.</h2>
-      <p class="section-sub">Your receivables are one of the biggest things your business owns. Tokenized, they sit in your wallet next to your crypto, with proof behind them.</p>
+      <span class="section-eyebrow">Our KYB Standard</span>
+      <h2 class="section-title">Verified before it mints,<br />and checked every day after.</h2>
+      <p class="section-sub">Only a business that passes our KYB can tokenize. Anyone relying on a token should know the business behind it is real, so here is exactly what we check.</p>
     </div>
     <div class="token-facts">
       <div class="token-fact">
-        <h3>Your receivables, in your wallet</h3>
-        <p>What your customers owe you becomes tokens on <span translate="no">Solana</span>, in a wallet only you control. A real-world asset you can hold on-chain, not just a line in your books.</p>
+        <h3>Owners and who's in control</h3>
+        <p>Every owner with a stake of 25% or more, and a person who controls the business, is identified, following the beneficial ownership baseline set by <span translate="no">FinCEN</span>.</p>
       </div>
       <div class="token-fact">
-        <h3>Proof anyone can check</h3>
-        <p>Instead of sending spreadsheets, point partners, investors or auditors to your token. Its daily report shows what's owed and what we verified, fingerprinted on-chain.</p>
+        <h3>Each person, and how they were checked</h3>
+        <p>The people on a business's KYB have their identity verified by our reviewers or a government ID check. The daily report says how they were verified, so a self-declared identity is never shown as checked.</p>
       </div>
       <div class="token-fact">
-        <h3>Always in step with your books</h3>
-        <p>Supply is kept equal to what's still owed. Tokens burn as invoices are paid, credited or written off, and the daily report says whenever the two don't match.</p>
+        <h3>The business checked by a person</h3>
+        <p>A reviewer matches the EIN against the IRS's letter, confirms the business is registered and in good standing, checks its address, and looks for it beyond its own paperwork.</p>
+      </div>
+      <div class="token-fact">
+        <h3>Sanctions screening, every day</h3>
+        <p>The business and its people are screened against OFAC's sanctions list when they apply, again every day, and again whenever money or tokens would move.</p>
+      </div>
+      <div class="token-fact">
+        <h3>A wallet that's really theirs</h3>
+        <p>Tokens are only minted to a wallet the business proves it controls by signing with it. A wallet another business also claims is flagged, and isn't reported as verified.</p>
+      </div>
+      <div class="token-fact">
+        <h3>Revoked in the open</h3>
+        <p>A confirmed sanctions match revokes the business's KYB, and its token's report says so the next day. While a KYB isn't approved, the business can't tokenize anything new.</p>
       </div>
     </div>
   </section>
@@ -144,7 +156,6 @@
   <!-- TOKENIZATION -->
   <section class="solutions" id="tokenization">
     <div class="section-header">
-      <span class="coming-soon-badge">Coming Soon · In testing on <span translate="no">Solana</span> devnet</span>
       <span class="section-eyebrow">Invoice Tokenization</span>
       <h2 class="section-title">Your invoices,<br />as tokens anyone can check.</h2>
       <p class="section-sub">Tokenizing an invoice your customer still owes mints tokens for what's outstanding into your business's wallet. Each token stands for one dollar owed, and burns as it's paid.</p>
@@ -167,42 +178,17 @@
         <p>Tokens go to a wallet your business proved it controls. They move only between accounts the platform allows, and <span translate="no">Scriply</span>, as the issuer, burns them as invoices are paid.</p>
       </div>
       <div class="token-fact">
-        <h3>Opt-in, per business</h3>
-        <p>An admin turns tokenizing on after the business is verified: they accept the tokenization terms and choose the wallet. Nothing goes on-chain before that.</p>
+        <h3>Every invoice checked</h3>
+        <p>Each invoice needs a supporting document and a customer who clears sanctions screening. It's compared with every invoice already tokenized, by any business: the same invoice is refused, and one that looks alike waits for a person to review it. An invoice from <span translate="no">QuickBooks</span> is read again there before anything is minted.</p>
       </div>
       <div class="token-fact">
-        <h3>A limit on what's out at once</h3>
-        <p>Each business has a cap on how much it can have tokenized at a time. A tokenization over it is refused before anything is minted.</p>
+        <h3>Opt-in, with a limit</h3>
+        <p>An admin turns tokenizing on after the business passes KYB, accepting the tokenization terms and choosing the wallet. Each business has a cap on how much it can have tokenized at once, and a tokenization over it is refused before anything is minted.</p>
       </div>
     </div>
 
     <h3 class="subsection-title">Built for the <span translate="no">MPL-3643</span> standard.</h3>
     <p class="section-sub" style="text-align:center">Our tokens already work the way <span translate="no">Metaplex</span>'s <span translate="no">MPL-3643</span> standard for permissioned real-world assets does: <span translate="no">Token-2022</span>, accounts that start frozen, and only approved holders. We'll adhere to <span translate="no">MPL-3643</span> as it opens up, and to <span translate="no">ERC-3643</span> when we come to EVM chains. <span translate="no">Metaplex</span> has <a href="https://solanacompass.com/news/metaplex-introduces-mpl-3643-a-permissioned-rwa-token-standard-for-tokenized">announced <span translate="no">MPL-3643</span> support</a> from <span translate="no">Orca</span>, <span translate="no">Raydium</span>, <span translate="no">Jupiter</span>, <span translate="no">Phantom</span> and <span translate="no">Solflare</span>.</p>
-
-    <h3 class="subsection-title">What we check before an invoice is tokenized.</h3>
-    <p class="section-sub" style="text-align:center">A token is only worth the invoice behind it. Every business and every invoice goes through these steps first.</p>
-    <div class="flow-steps">
-      <div class="flow-step">
-        <div class="step-number">1</div>
-        <h4>We verify the business</h4>
-        <p>A business passes our review before it can tokenize: its owners with a 25% stake or more and a person who controls it are identified, and the business and its people are screened against sanctions lists.</p>
-      </div>
-      <div class="flow-step">
-        <div class="step-number">2</div>
-        <h4>We verify the wallet</h4>
-        <p>Tokens are only minted to a wallet the business proves it controls, by signing with it.</p>
-      </div>
-      <div class="flow-step">
-        <div class="step-number">3</div>
-        <h4>We check every invoice</h4>
-        <p>Each invoice needs a supporting document and a customer who clears sanctions screening. It's compared with every invoice already tokenized, by any business: the same invoice is refused, and one that looks alike waits for a person to review it. An invoice from <span translate="no">QuickBooks</span> is read again there before anything is minted.</p>
-      </div>
-      <div class="flow-step">
-        <div class="step-number">4</div>
-        <h4>We report on every token, publicly</h4>
-        <p>Every day we publish each token's report — what's outstanding, how overdue, how concentrated, how fast it's paid, and what we verified — with its fingerprint recorded on-chain.</p>
-      </div>
-    </div>
   </section>
 
   <!-- DAILY REPORT -->
@@ -442,6 +428,14 @@
   </footer>
 
   <script>
+    // Accounting moved to its own page; links to the old home page's
+    // sections still land on it.
+    (function () {
+      if (location.hash === '#solutions' || location.hash === '#roadmap') {
+        location.replace('/accounting' + location.hash);
+      }
+    })();
+
     // The phone menu: opens and closes the links, and closes once one is chosen.
     (function () {
       var nav = document.querySelector('nav');
