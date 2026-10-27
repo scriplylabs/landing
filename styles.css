@@ -784,6 +784,16 @@ footer {
 }
 .not-promised strong { color: var(--text); }
 
+/* ── CREAM BANDS ── */
+/* Sets a section apart from the white ones next to it */
+.band-cream {
+  background: var(--cream);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+.band-cream .token-fact { background: var(--white); }
+.solution-card .prop-link { display: inline-block; margin-top: 1.25rem; }
+
 /* ── THE TWO PAGES ── */
 /* Under the home hero: the way across for a business whose books are elsewhere */
 .hero-fork {
