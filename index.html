@@ -18,6 +18,23 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="/styles.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Scriply",
+    "url": "https://www.scriply.io/",
+    "logo": "https://www.scriply.io/apple-touch-icon.png",
+    "description": "Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public daily report anyone can check.",
+    "sameAs": [
+      "https://x.com/scriplyio",
+      "https://t.me/scriplyio",
+      "https://www.facebook.com/scriplyio",
+      "https://www.linkedin.com/company/scriplylabs",
+      "https://www.crunchbase.com/organization/scriplylabs"
+    ]
+  }
+  </script>
 </head>
 <body>
 
@@ -62,7 +79,7 @@
     <div class="hero-actions">
       <a href="https://app.scriply.io" class="btn-primary">Try It For Free</a>
       <div class="hero-actions-secondary">
-        <a href="#report" class="btn-secondary">See the Daily Report</a>
+        <a href="#demos" class="btn-secondary">Watch the 5-Min Demo</a>
       </div>
     </div>
     <div class="ledger" role="figure" aria-label="Example: an invoice verified, tokenized, and its tokens burned as it is paid">
@@ -86,33 +103,51 @@
     </div>
   </section>
 
+  <!-- DEMOS -->
+  <section class="demos" id="demos">
+    <div class="section-header">
+      <span class="section-eyebrow">Demo</span>
+      <h2 class="section-title">See tokenization at work.</h2>
+      <p class="section-sub">A short walkthrough, recorded in the app.</p>
+    </div>
+    <div class="demos-grid">
+      <figure class="demo-card">
+        <iframe src="https://www.loom.com/embed/6c1cb89d6f544f93a5ef069754896e89" title="Invoice tokenization demo" loading="lazy" allowfullscreen></iframe>
+        <figcaption>
+          <h3>Invoice tokenization</h3>
+          <p>Turning tokenization on after verification, tokenizing an invoice and reading its memo on <span translate="no">Solana</span>, and the daily report on every token. 5 min.</p>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
   <!-- HOW IT WORKS -->
   <section class="how-it-works" id="how">
     <div class="section-header">
       <span class="section-eyebrow">How It Works</span>
       <h2 class="section-title">A token is only worth<br />the invoice behind it.</h2>
-      <p class="section-sub">So before anything is minted, we verify who you are and the wallet you'll hold it in, and read your books to see what's really owed.</p>
+      <p class="section-sub">Before anything mints, we verify you and your wallet, and read your books for what's really owed.</p>
     </div>
     <div class="flow-steps">
       <div class="flow-step">
         <div class="step-number">1</div>
         <h3>Get verified</h3>
-        <p>We verify your business, its owners and the person who runs it, and screen them against sanctions lists.</p>
+        <p>Your business, its owners and who runs it, screened against sanctions lists.</p>
       </div>
       <div class="flow-step">
         <div class="step-number">2</div>
         <h3>Prove your wallet</h3>
-        <p>Sign with the wallet your tokens will go to, so we know it's yours. <span translate="no">Scriply</span> never holds its keys.</p>
+        <p>Sign with the wallet your tokens go to. <span translate="no">Scriply</span> never holds its keys.</p>
       </div>
       <div class="flow-step">
         <div class="step-number">3</div>
         <h3>Connect your books</h3>
-        <p>Connect <span translate="no">QuickBooks</span>, or keep your books in <span translate="no">Scriply</span>. That's where we see each invoice, and when it's paid.</p>
+        <p><span translate="no">QuickBooks</span>, or books in <span translate="no">Scriply</span>: where we see each invoice and its payment.</p>
       </div>
       <div class="flow-step">
         <div class="step-number">4</div>
         <h3>Tokenize, and we report</h3>
-        <p>Tokenize the invoices you choose. Every day we publish each token's health: what's owed, how overdue, and what we verified.</p>
+        <p>Pick the invoices to tokenize. Each token's health is published daily.</p>
       </div>
     </div>
   </section>
@@ -122,32 +157,32 @@
     <div class="section-header">
       <span class="section-eyebrow">Our KYB Standard</span>
       <h2 class="section-title">Verified before it mints,<br />and checked every day after.</h2>
-      <p class="section-sub">Only a business that passes our KYB can tokenize. Anyone relying on a token should know the business behind it is real, so here is exactly what we check.</p>
+      <p class="section-sub">Only a business that passes our KYB can tokenize. Here's what we check.</p>
     </div>
     <div class="token-facts">
       <div class="token-fact">
         <h3>Owners and who's in control</h3>
-        <p>Every owner with a stake of 25% or more, and a person who controls the business, is identified, following the beneficial ownership baseline set by <span translate="no">FinCEN</span>.</p>
+        <p>Every 25%+ owner and a control person, per <span translate="no">FinCEN</span>'s beneficial ownership baseline.</p>
       </div>
       <div class="token-fact">
         <h3>Each person, and how they were checked</h3>
-        <p>The people on a business's KYB have their identity verified by our reviewers or a government ID check. The daily report says how they were verified, so a self-declared identity is never shown as checked.</p>
+        <p>Verified by a reviewer or a government ID check, and the daily report says which.</p>
       </div>
       <div class="token-fact">
         <h3>The business checked by a person</h3>
-        <p>A reviewer matches the EIN against the IRS's letter, confirms the business is registered and in good standing, checks its address, and looks for it beyond its own paperwork.</p>
+        <p>EIN matched to the IRS letter; registration, good standing and address confirmed.</p>
       </div>
       <div class="token-fact">
         <h3>Sanctions screening, every day</h3>
-        <p>The business and its people are screened against OFAC's sanctions list when they apply, again every day, and again whenever money or tokens would move.</p>
+        <p>Against OFAC's list at sign-up, every day, and whenever money or tokens move.</p>
       </div>
       <div class="token-fact">
         <h3>A wallet that's really theirs</h3>
-        <p>Tokens are only minted to a wallet the business proves it controls by signing with it. A wallet another business also claims is flagged, and isn't reported as verified.</p>
+        <p>Tokens mint only to a wallet the business signs with. One two businesses claim is flagged.</p>
       </div>
       <div class="token-fact">
         <h3>Revoked in the open</h3>
-        <p>A confirmed sanctions match revokes the business's KYB, and its token's report says so the next day. While a KYB isn't approved, the business can't tokenize anything new.</p>
+        <p>A confirmed sanctions match revokes KYB, stops new tokenizing, and shows in the next day's report.</p>
       </div>
     </div>
   </section>
@@ -157,32 +192,32 @@
     <div class="section-header">
       <span class="section-eyebrow">Invoice Tokenization</span>
       <h2 class="section-title">Your invoices,<br />as tokens anyone can check.</h2>
-      <p class="section-sub">Tokenizing an invoice your customer still owes mints tokens for what's outstanding into your business's wallet. Each token stands for one dollar owed, and burns as it's paid.</p>
+      <p class="section-sub">Each token is one dollar your customer still owes, minted to your wallet and burned as it's paid.</p>
     </div>
     <div class="token-facts">
       <div class="token-fact">
         <h3>One token per dollar owed</h3>
-        <p>Each business has its own US dollar receivables token. Its supply always equals what's still owed on the business's tokenized invoices, so a token from one business is never mixed with another's.</p>
+        <p>Each business has its own USD receivables token, and its supply always equals what's still owed.</p>
       </div>
       <div class="token-fact">
         <h3>Burns as invoices are paid</h3>
-        <p>A payment, credit or write-off burns the same number of tokens. A tokenized invoice is locked against edits until its last token burns, and a change in your accounting system is held back and disclosed rather than applied silently.</p>
+        <p>Payments, credits and write-offs burn tokens. A tokenized invoice is locked until its last token burns.</p>
       </div>
       <div class="token-fact">
         <h3>On <span translate="no">Solana</span>, with nothing private on-chain</h3>
-        <p>Every mint and burn is recorded on-chain with a fingerprint of the invoice behind it. Nothing on-chain names the business, its customers or its invoices.</p>
+        <p>Each mint and burn carries an invoice fingerprint. Nothing on-chain names the business, its customers or invoices.</p>
       </div>
       <div class="token-fact">
         <h3>Minted to your wallet</h3>
-        <p>Tokens go to a wallet your business proved it controls. They move only between accounts the platform allows, and <span translate="no">Scriply</span>, as the issuer, burns them as invoices are paid.</p>
+        <p>A wallet you proved you control. Tokens move only between approved accounts.</p>
       </div>
       <div class="token-fact">
         <h3>Every invoice checked</h3>
-        <p>Each invoice needs a supporting document and a customer who clears sanctions screening. It's compared with every invoice already tokenized, by any business: the same invoice is refused, and one that looks alike waits for a person to review it. An invoice from <span translate="no">QuickBooks</span> is read again there before anything is minted.</p>
+        <p>A supporting document, a screened customer, and a duplicate check against every invoice already tokenized.</p>
       </div>
       <div class="token-fact">
         <h3>Opt-in, with a limit</h3>
-        <p>An admin turns tokenizing on after the business passes KYB, accepting the tokenization terms and choosing the wallet. Each business has a cap on how much it can have tokenized at once, and a tokenization over it is refused before anything is minted.</p>
+        <p>An admin turns it on after KYB, and each business has a cap on what it can have tokenized at once.</p>
       </div>
     </div>
 
@@ -191,7 +226,7 @@
     <p class="footnote">*Planned, and not available yet. Timing and supported chains may change.</p>
 
     <h3 class="subsection-title">Built for the <span translate="no">MPL-3643</span> standard.</h3>
-    <p class="section-sub" style="text-align:center">Our tokens already work the way <span translate="no">Metaplex</span>'s <span translate="no">MPL-3643</span> standard for permissioned real-world assets does: <span translate="no">Token-2022</span>, accounts that start frozen, and only approved holders. We'll adhere to <span translate="no">MPL-3643</span> as it opens up, and to <span translate="no">ERC-3643</span> when we come to EVM chains. <span translate="no">Metaplex</span> has <a href="https://solanacompass.com/news/metaplex-introduces-mpl-3643-a-permissioned-rwa-token-standard-for-tokenized">announced <span translate="no">MPL-3643</span> support</a> from <span translate="no">Orca</span>, <span translate="no">Raydium</span>, <span translate="no">Jupiter</span>, <span translate="no">Phantom</span> and <span translate="no">Solflare</span>.</p>
+    <p class="section-sub" style="text-align:center">Our tokens already work like <span translate="no">Metaplex</span>'s <a href="https://solanacompass.com/news/metaplex-introduces-mpl-3643-a-permissioned-rwa-token-standard-for-tokenized"><span translate="no">MPL-3643</span></a> permissioned RWA standard. We'll adopt it as it opens up, and <span translate="no">ERC-3643</span> on EVM chains.</p>
   </section>
 
   <!-- DAILY REPORT -->
@@ -199,7 +234,7 @@
     <div class="section-header">
       <span class="section-eyebrow">The Daily Report</span>
       <h2 class="section-title">What anyone can check<br />about every token.</h2>
-      <p class="section-sub">When tokenization launches, each token's latest report will be public, by its address, with no sign-in. It shows the totals, aging and risk, without the invoices or customers behind them.</p>
+      <p class="section-sub">When tokenization launches, each token's report will be public by its address: totals, aging and risk, never the invoices or customers.</p>
     </div>
     <div class="report-layout">
       <div class="payload">
@@ -264,11 +299,11 @@
       <dl class="fields">
         <div>
           <dt>supply · outstandingUnits · reconciled</dt>
-          <dd>Tokens in existence, and dollars still owed on the invoices behind them. They match whenever the report reconciles. <code>tokenizationLimit</code> is the most the business may have tokenized at once.</dd>
+          <dd>Tokens in existence and dollars still owed. They match when the report reconciles.</dd>
         </div>
         <div>
           <dt>burnDebt</dt>
-          <dd>Tokens owed for burning that couldn't be burned yet. While it's above zero the token is under-backed, the report says so, and the business can't tokenize anything new.</dd>
+          <dd>Tokens due to burn that couldn't yet. Above zero, the token is under-backed and the business can't tokenize more.</dd>
         </div>
         <div>
           <dt>aging</dt>
@@ -276,20 +311,20 @@
         </div>
         <div>
           <dt>risk</dt>
-          <dd>How concentrated the customers are, the share of invoices made in <span translate="no">Scriply</span> rather than an accounting system, how long tokens stay out before they burn, and flags from a fixed list for what is the case, such as <code>self-issued-invoices</code> or <code>burn-debt-overdue</code>. The numbers are there for you to judge; we set no thresholds.</dd>
+          <dd>Customer concentration, self-issued share, time to burn, and flags. We set no thresholds: you judge.</dd>
         </div>
         <div>
           <dt>assurance</dt>
-          <dd>What we verified about the business behind the token, such as its EIN and registration, its owners and its wallet, without saying who it is.</dd>
+          <dd>What we verified about the business, without saying who it is.</dd>
         </div>
         <div>
           <dt>sha256 · attestations</dt>
-          <dd>The fingerprint of the day's full report, and the <span translate="no">Solana</span> transaction that recorded it. Anyone given the full report hashes it and compares it with the chain.</dd>
+          <dd>The day's report fingerprint, and the <span translate="no">Solana</span> transaction that recorded it.</dd>
         </div>
       </dl>
     </div>
     <div class="not-promised">
-      <strong>What the report doesn't promise.</strong> We stand behind how each token is made: who could tokenize, what was checked, and that supply matches what's owed. We don't promise that customers will pay or how good the invoices are as credit. Those are for whoever relies on a token to judge, and the report is there so they can.
+      <strong>What the report doesn't promise.</strong> We stand behind how each token is made, not whether customers pay. That's for whoever relies on it to judge.
     </div>
   </section>
 
@@ -328,24 +363,6 @@
         <p>Connect <span translate="no">QuickBooks</span> and your wallets are booked there too, or keep your books in <span translate="no">Scriply</span> if you're just starting. Pay bills in <span translate="no">USDC</span> from a wallet you control.</p>
       </div>
       <a href="/books" class="btn-white">Books →</a>
-    </div>
-  </section>
-
-  <!-- DEMOS -->
-  <section class="demos" id="demos">
-    <div class="section-header">
-      <span class="section-eyebrow">Demo</span>
-      <h2 class="section-title">See tokenization at work.</h2>
-      <p class="section-sub">A short walkthrough, recorded in the app.</p>
-    </div>
-    <div class="demos-grid">
-      <figure class="demo-card">
-        <iframe src="https://www.loom.com/embed/6c1cb89d6f544f93a5ef069754896e89" title="Invoice tokenization demo" loading="lazy" allowfullscreen></iframe>
-        <figcaption>
-          <h3>Invoice tokenization</h3>
-          <p>Turning tokenization on after verification, tokenizing an invoice and reading its memo on <span translate="no">Solana</span>, and the daily report on every token. 5 min.</p>
-        </figcaption>
-      </figure>
     </div>
   </section>
 
@@ -391,6 +408,8 @@
           <li><a href="https://x.com/scriplyio" rel="me noopener" target="_blank"><span translate="no">X</span> @scriplyio</a></li>
           <li><a href="https://t.me/scriplyio" rel="me noopener" target="_blank"><span translate="no">Telegram</span></a></li>
           <li><a href="https://www.facebook.com/scriplyio" rel="me noopener" target="_blank"><span translate="no">Facebook</span></a></li>
+          <li><a href="https://www.linkedin.com/company/scriplylabs" rel="me noopener" target="_blank"><span translate="no">LinkedIn</span></a></li>
+          <li><a href="https://www.crunchbase.com/organization/scriplylabs" rel="me noopener" target="_blank"><span translate="no">Crunchbase</span></a></li>
         </ul>
       </div>
       <div class="footer-col">
