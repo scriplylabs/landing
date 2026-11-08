@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scriply — Invoice Tokenization for Crypto Businesses</title>
-  <meta name="description" content="Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public daily report anyone can check.">
+  <meta name="description" content="Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public report anyone can check.">
   <meta name="theme-color" content="#013e3f">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.scriply.io/">
   <meta property="og:site_name" content="Scriply">
   <meta property="og:title" content="Scriply — Your invoices, on-chain">
-  <meta property="og:description" content="Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public daily report anyone can check.">
+  <meta property="og:description" content="Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public report anyone can check.">
   <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
     "name": "Scriply",
     "url": "https://www.scriply.io/",
     "logo": "https://www.scriply.io/apple-touch-icon.png",
-    "description": "Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public daily report anyone can check.",
+    "description": "Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public report anyone can check.",
     "sameAs": [
       "https://x.com/scriplyio",
       "https://t.me/scriplyio",
@@ -63,7 +63,7 @@
     <ul id="nav-links">
       <li><a href="#kyb">KYB Standard</a></li>
       <li><a href="#tokenization">Tokenization</a></li>
-      <li><a href="#report">Daily Report</a></li>
+      <li><a href="#report">Token Report</a></li>
       <li><a href="/books">Books</a></li>
       <li><a href="https://app.scriply.io">Sign In</a></li>
       <li><a href="https://app.scriply.io" class="nav-cta">Try It For Free</a></li>
@@ -116,7 +116,7 @@
         <iframe src="https://www.loom.com/embed/6c1cb89d6f544f93a5ef069754896e89" title="Invoice tokenization demo" loading="lazy" allowfullscreen></iframe>
         <figcaption>
           <h3>Invoice tokenization</h3>
-          <p>Turning tokenization on after verification, tokenizing an invoice and reading its memo on <span translate="no">Solana</span>, and the daily report on every token. 5 min.</p>
+          <p>Turning tokenization on after verification, tokenizing an invoice and reading its memo on <span translate="no">Solana</span>, and the public report on every token. 5 min.</p>
         </figcaption>
       </figure>
     </div>
@@ -126,31 +126,154 @@
   <section class="how-it-works" id="how">
     <div class="section-header">
       <span class="section-eyebrow">How It Works</span>
-      <h2 class="section-title">A token is only worth<br />the invoice behind it.</h2>
-      <p class="section-sub">Before anything mints, we verify you and your wallet, and read your books for what's really owed.</p>
+      <h2 class="section-title">From an invoice to a loan,<br />with facts anyone can check.</h2>
+      <p class="section-sub">We verify you and read your books before anything mints. A lender's program checks the token's numbers on-chain and decides by its own rules.</p>
     </div>
-    <div class="flow-steps">
+
+    <figure class="flow">
+      <div class="flow-scroll">
+        <svg viewBox="0 0 1190 440" role="img" aria-label="Flow: the business and its people pass KYB and KYC, and Scriply attests its wallet on Solana; an invoice is checked and minted as tokens to the business's wallet; Scriply signs a snapshot of the token report's numbers; the business pledges the tokens to a lender's program, which checks the attestation, checks the snapshot's signature and lends USDC; when the customer pays, the business repays and the tokens return and burn.">
+          <defs>
+            <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah" d="M0 0 L10 5 L0 10 z"/></marker>
+            <marker id="ahn" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ah-next" d="M0 0 L10 5 L0 10 z"/></marker>
+          </defs>
+
+          <!-- Lanes -->
+          <rect class="lane-a" x="0" y="30" width="1190" height="100"/>
+          <rect class="lane-b" x="0" y="130" width="1190" height="100"/>
+          <rect class="lane-a" x="0" y="230" width="1190" height="100"/>
+          <rect class="lane-b" x="0" y="330" width="1190" height="100"/>
+          <text class="lane-label" x="12" y="84">Your business</text>
+          <text class="lane-label" x="12" y="184" translate="no">Scriply</text>
+          <text class="lane-label" x="12" y="284" translate="no">Solana</text>
+          <text class="lane-label" x="12" y="378">Lender's</text>
+          <text class="lane-label" x="12" y="393">program</text>
+
+          <!-- What's next: borrowing and repaying -->
+          <rect class="next-zone" x="842" y="26" width="338" height="408" rx="10"/>
+
+          <!-- Column headers -->
+          <text class="col-label" x="210" y="18" text-anchor="middle">Verify</text>
+          <text class="col-label" x="480" y="18" text-anchor="middle">Tokenize</text>
+          <text class="col-label" x="750" y="18" text-anchor="middle">Publish</text>
+          <text class="next-label" x="930" y="18" text-anchor="middle">Borrow</text>
+          <text class="next-label" x="1110" y="18" text-anchor="middle">Repay</text>
+
+          <!-- Edges: verify -->
+          <path class="edge" d="M210 106 V150" marker-end="url(#ah)"/>
+          <text class="el" x="218" y="132">you apply</text>
+          <path class="edge" d="M210 206 V250" marker-end="url(#ah)"/>
+          <text class="el" x="218" y="232">attests your wallet</text>
+
+          <!-- Edges: tokenize and publish -->
+          <path class="edge" d="M465 80 H570 V150" marker-end="url(#ah)"/>
+          <text class="el" x="517" y="72" text-anchor="middle">you choose it</text>
+          <path class="edge" d="M570 206 V250" marker-end="url(#ah)"/>
+          <text class="el" x="578" y="232">mints</text>
+          <path class="edge" d="M645 180 H671" marker-end="url(#ah)"/>
+          <path class="edge" d="M750 206 V250" marker-end="url(#ah)"/>
+          <text class="el" x="758" y="232">we sign</text>
+
+          <!-- Edges: borrow and repay -->
+          <path class="edge-next" d="M570 306 V380 H851" marker-end="url(#ahn)"/>
+          <text class="el" x="710" y="372" text-anchor="middle">you pledge the tokens</text>
+          <path class="edge-next" d="M210 306 V420 H930 V410" marker-end="url(#ahn)"/>
+          <text class="el" x="570" y="414" text-anchor="middle">checks your wallet's attestation</text>
+          <path class="edge-next" d="M825 280 H890 V350" marker-end="url(#ahn)"/>
+          <text class="el" x="870" y="268" text-anchor="middle">read at borrow</text>
+          <path class="edge-next" d="M970 354 V110" marker-end="url(#ahn)"/>
+          <text class="el" x="978" y="232">lends USDC</text>
+          <path class="edge-next" d="M1110 106 V350" marker-end="url(#ahn)"/>
+          <text class="el" x="1118" y="232">you repay</text>
+
+          <!-- Nodes: verify -->
+          <rect class="node" x="135" y="54" width="150" height="52" rx="8"/>
+          <text class="t" x="210" y="76" text-anchor="middle">Your business</text>
+          <text class="s" x="210" y="93" text-anchor="middle">and the people behind it</text>
+
+          <rect class="node" x="135" y="154" width="150" height="52" rx="8"/>
+          <text class="t" x="210" y="176" text-anchor="middle">KYB and KYC</text>
+          <text class="s" x="210" y="193" text-anchor="middle">business, owners, IDs</text>
+
+          <rect class="node" x="135" y="254" width="150" height="52" rx="8"/>
+          <text class="t" x="210" y="276" text-anchor="middle">Wallet attestation</text>
+          <text class="s" x="210" y="293" text-anchor="middle">a verified business, on-chain</text>
+
+          <!-- Nodes: tokenize and publish -->
+          <rect class="node" x="315" y="54" width="150" height="52" rx="8"/>
+          <text class="t" x="390" y="76" text-anchor="middle">Invoice INV-1042</text>
+          <text class="s" x="390" y="93" text-anchor="middle">$1,250 your customer owes</text>
+
+          <rect class="node" x="495" y="154" width="150" height="52" rx="8"/>
+          <text class="t" x="570" y="176" text-anchor="middle">Check and mint</text>
+          <text class="s" x="570" y="193" text-anchor="middle">invoice, customer, duplicates</text>
+
+          <rect class="node" x="495" y="254" width="150" height="52" rx="8"/>
+          <text class="t" x="570" y="276" text-anchor="middle">1,250 tokens</text>
+          <text class="s" x="570" y="293" text-anchor="middle">in your wallet</text>
+
+          <rect class="node" x="675" y="154" width="150" height="52" rx="8"/>
+          <text class="t" x="750" y="176" text-anchor="middle">Token report</text>
+          <text class="s" x="750" y="193" text-anchor="middle">totals, aging, burn debt</text>
+
+          <rect class="node" x="675" y="254" width="150" height="52" rx="8"/>
+          <text class="t" x="750" y="276" text-anchor="middle">Signed snapshot</text>
+          <text class="s" x="750" y="293" text-anchor="middle">the numbers, our signature</text>
+
+          <!-- Nodes: borrow and repay -->
+          <rect class="node-next" x="855" y="354" width="150" height="52" rx="8"/>
+          <text class="t" x="930" y="376" text-anchor="middle">Lender's rules</text>
+          <text class="s" x="930" y="393" text-anchor="middle">150% collateral, cap, term</text>
+
+          <rect class="node-next" x="855" y="54" width="150" height="52" rx="8"/>
+          <text class="t" x="930" y="76" text-anchor="middle">USDC in your wallet</text>
+          <text class="s" x="930" y="93" text-anchor="middle">up to $833 on 1,250</text>
+
+          <rect class="node-next" x="1035" y="54" width="150" height="52" rx="8"/>
+          <text class="t" x="1110" y="76" text-anchor="middle">Acme pays you</text>
+          <text class="s" x="1110" y="93" text-anchor="middle">the invoice is settled</text>
+
+          <rect class="node-next" x="1035" y="354" width="150" height="52" rx="8"/>
+          <text class="t" x="1110" y="376" text-anchor="middle">Loan closed</text>
+          <text class="s" x="1110" y="393" text-anchor="middle">tokens return, then burn</text>
+        </svg>
+      </div>
+      <figcaption><span translate="no">Scriply</span> verifies and reports the facts; the lender's program decides whether to lend and how much. Borrowing, in yellow, is planned and runs on devnet first. Example values.</figcaption>
+    </figure>
+
+    <div class="flow-steps flow-steps-six">
       <div class="flow-step">
         <div class="step-number">1</div>
-        <h3>Get verified</h3>
-        <p>Your business, its owners and who runs it, screened against sanctions lists.</p>
+        <h3>Verify your business</h3>
+        <p>KYB: registration, good standing and EIN, checked by a person, and screened against sanctions lists.</p>
       </div>
       <div class="flow-step">
         <div class="step-number">2</div>
-        <h3>Prove your wallet</h3>
-        <p>Sign with the wallet your tokens go to. <span translate="no">Scriply</span> never holds its keys.</p>
+        <h3>Verify its people</h3>
+        <p>KYC: every 25%+ owner and a control person, by a government ID check or a reviewer.</p>
       </div>
       <div class="flow-step">
         <div class="step-number">3</div>
+        <h3>Prove your wallet</h3>
+        <p>Sign with the wallet your tokens go to, and we attest it on <span translate="no">Solana</span>. <span translate="no">Scriply</span> never holds its keys.</p>
+      </div>
+      <div class="flow-step">
+        <div class="step-number">4</div>
         <h3>Connect your books</h3>
         <p><span translate="no">QuickBooks</span>, or books in <span translate="no">Scriply</span>: where we see each invoice and its payment.</p>
       </div>
       <div class="flow-step">
-        <div class="step-number">4</div>
+        <div class="step-number">5</div>
         <h3>Tokenize, and we report</h3>
-        <p>Pick the invoices to tokenize. Each token's health is published daily.</p>
+        <p>Pick the invoices to tokenize. Each token's numbers are public, and signed by us for any program to check.</p>
+      </div>
+      <div class="flow-step">
+        <div class="step-number">6</div>
+        <h3>Borrow against them*</h3>
+        <p>Pledge your tokens to a lender's program. Its rules check your attestation and our signed snapshot, then lend USDC.</p>
       </div>
     </div>
+    <p class="footnote">*Planned, and not available yet.</p>
   </section>
 
   <!-- KYB STANDARD -->
@@ -167,7 +290,7 @@
       </div>
       <div class="token-fact">
         <h3>Each person, and how they were checked</h3>
-        <p>Verified by a reviewer or a government ID check, and the daily report says which.</p>
+        <p>Verified by a reviewer or a government ID check, and the token's public report says which.</p>
       </div>
       <div class="token-fact">
         <h3>The business checked by a person</h3>
@@ -183,7 +306,7 @@
       </div>
       <div class="token-fact">
         <h3>Revoked in the open</h3>
-        <p>A confirmed sanctions match revokes KYB, stops new tokenizing, and shows in the next day's report.</p>
+        <p>A confirmed sanctions match revokes KYB, stops new tokenizing, and shows on the token's public report.</p>
       </div>
     </div>
   </section>
@@ -230,12 +353,12 @@
     <p class="section-sub" style="text-align:center">Our tokens already work like <span translate="no">Metaplex</span>'s <a href="https://solanacompass.com/news/metaplex-introduces-mpl-3643-a-permissioned-rwa-token-standard-for-tokenized"><span translate="no">MPL-3643</span></a> permissioned RWA standard. We'll adopt it as it opens up, and <span translate="no">ERC-3643</span> on EVM chains.</p>
   </section>
 
-  <!-- DAILY REPORT -->
+  <!-- TOKEN REPORT -->
   <section class="report" id="report">
     <div class="section-header">
-      <span class="section-eyebrow">The Daily Report</span>
+      <span class="section-eyebrow">The Token Report</span>
       <h2 class="section-title">What anyone can check<br />about every token.</h2>
-      <p class="section-sub">When tokenization launches, each token's report will be public by its address: totals, aging and risk, never the invoices or customers.</p>
+      <p class="section-sub">Each token's numbers are public by its address and computed live: totals, aging and risk, never the invoices or customers. Each month the business publishes a report, and its fingerprint is recorded on <span translate="no">Solana</span>.</p>
     </div>
     <div class="report-layout">
       <div class="payload">
@@ -247,9 +370,17 @@
   "network": "sol",
   "tokenAddress": "Ah8cVgnZ8SjPzRtJoCAo26BHBjc4T7xQ6Rsk3apRXdRY",
   "currency": "FIAT_USD",
-  "asOf": "2026-10-06T00:00:00Z",
-  "sha256": "a7eb512136b792d30f616ebe720f5a0c0e079ab99752a26f222faa196f5bd85f",
-  "attestations": { "sol": "3Vj9uCytyrTshBTim1ELkc2RH9cLA9jxUTSyemENPL8oFgfcbBFFL39gsrdLy3z1g4zQaF8tYR1YzZqv8CqiaNhZ" },
+  "asOf": "2026-11-07T18:04:00Z",
+  "latestReport": {
+    "id": "FIAT_USD.2026-10",
+    "mintId": "FIAT_USD",
+    "periodEnd": "2026-10-31",
+    "asOf": "2026-11-03T15:20:41Z",
+    "sha256": "a7eb512136b792d30f616ebe720f5a0c0e079ab99752a26f222faa196f5bd85f",
+    "attestations": [
+      { "network": "sol", "txId": "3Vj9uCytyrTshBTim1ELkc2RH9cLA9jxUTSyemENPL8oFgfcbBFFL39gsrdLy3z1g4zQaF8tYR1YzZqv8CqiaNhZ" }
+    ]
+  },
 
   "supply": "184250",
   "circulatingSupply": "184250",
@@ -280,19 +411,22 @@
       "wallet-verified",
       "ein-confirmed",
       "business-registered"
-    ]
+    ],
+    "lienSearchedAt": "2026-07-12T10:31:05Z"
   },
 
   "risk": {
     "topCustomerShare": "0.22",
     "topFiveShare": "0.71",
     "concentrationIndex": "0.14",
-    "selfIssuedShare": "0.08",
+    "acceptedShare": "0.64",
+    "verifiedAcceptedShare": "0.41",
+    "disputedShare": "0.03",
     "daysToBurn": "41.6",
     "burnedTokenizations": 31,
     "historyDays": 212,
     "settledTokenizations": 37,
-    "flags": ["self-issued-invoices"]
+    "flags": ["customer-disputed-invoices"]
   }
 }</pre>
         <p class="payload-note">Illustrative report for a made-up business. Units are dollars of invoices still owed.</p>
@@ -300,11 +434,11 @@
       <dl class="fields">
         <div>
           <dt>supply · outstandingUnits · reconciled</dt>
-          <dd>Tokens in existence and dollars still owed. They match when the report reconciles.</dd>
+          <dd>Tokens in existence and dollars still owed, on every network. They match when the token reconciles.</dd>
         </div>
         <div>
-          <dt>burnDebt</dt>
-          <dd>Tokens due to burn that couldn't yet. Above zero, the token is under-backed and the business can't tokenize more.</dd>
+          <dt>burnDebt · burnDebtOverdue</dt>
+          <dd>Tokens due to burn that haven't yet. Above zero, the token is under-backed and the business can't tokenize more; overdue once its grace period has passed.</dd>
         </div>
         <div>
           <dt>aging</dt>
@@ -312,15 +446,15 @@
         </div>
         <div>
           <dt>risk</dt>
-          <dd>Customer concentration, self-issued share, time to burn, and flags. We set no thresholds: you judge.</dd>
+          <dd>Customer concentration, how much customers have confirmed or disputed, time to burn, and flags. We set no thresholds: you judge.</dd>
         </div>
         <div>
           <dt>assurance</dt>
           <dd>What we verified about the business, without saying who it is.</dd>
         </div>
         <div>
-          <dt>sha256 · attestations</dt>
-          <dd>The day's report fingerprint, and the <span translate="no">Solana</span> transaction that recorded it.</dd>
+          <dt>latestReport</dt>
+          <dd>The latest monthly report's fingerprint, and the <span translate="no">Solana</span> transaction that recorded it. The live numbers above aren't attested; the report is.</dd>
         </div>
       </dl>
     </div>
@@ -329,29 +463,95 @@
     </div>
   </section>
 
+  <!-- SIGNED SNAPSHOT -->
+  <section class="snapshot" id="snapshot">
+    <div class="section-header">
+      <span class="section-eyebrow">The Signed Snapshot</span>
+      <h2 class="section-title">The same numbers,<br />readable by any program.</h2>
+      <p class="section-sub">Every token will publish the same fields, signed by <span translate="no">Scriply</span>, so a lender integrates once and can read any of our tokens. No oracle network, and no fee to anyone.</p>
+      <span class="coming-soon-badge snapshot-badge">Draft schema</span>
+    </div>
+
+    <div class="snapshot-layout">
+      <div class="snapshot-table">
+        <table>
+          <thead><tr><th>Field</th><th>What it is</th><th class="num">Example</th></tr></thead>
+          <tbody>
+            <tr class="group"><td colspan="3">Supply and backing</td></tr>
+            <tr><td><code>networkSupply</code></td><td class="desc">Tokens on this network, which a program can check against the chain itself.</td><td class="num">184250</td></tr>
+            <tr><td><code>outstandingUnits</code></td><td class="desc">Tokens backed by invoices still owed, on every network. One token is one dollar.</td><td class="num">184250</td></tr>
+            <tr><td><code>burnDebt</code></td><td class="desc">Tokens due to burn that haven't yet. Above 0, the token is under-backed.</td><td class="num">0</td></tr>
+            <tr><td><code>burnDebtOverdue</code></td><td class="desc"><code>1</code> once burn debt is past its grace period, else <code>0</code>. A lender stops accepting the token.</td><td class="num">0</td></tr>
+            <tr class="group"><td colspan="3">Aging: owed, by days past due</td></tr>
+            <tr><td><code>agingCurrent</code></td><td class="desc">Not yet due.</td><td class="num">132400</td></tr>
+            <tr><td><code>agingDays1To30</code></td><td class="desc">1 to 30 days past due.</td><td class="num">38150</td></tr>
+            <tr><td><code>agingDays31To60</code></td><td class="desc">31 to 60 days past due.</td><td class="num">9800</td></tr>
+            <tr><td><code>agingDays61To90</code></td><td class="desc">61 to 90 days past due.</td><td class="num">3900</td></tr>
+            <tr><td><code>agingOver90</code></td><td class="desc">More than 90 days past due.</td><td class="num">0</td></tr>
+            <tr class="group"><td colspan="3">Risk</td></tr>
+            <tr><td><code>concentrationIndex</code></td><td class="desc">How concentrated customers are, near 0 (spread out) to 1 (one customer).</td><td class="num">0.14</td></tr>
+            <tr><td><code>disputedShare</code></td><td class="desc">Share of what's owed on invoices the customer disputes.</td><td class="num">0.03</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="snapshot-side">
+        <div class="payload">
+          <div class="payload-head"><code>GET …/receivables-tokens/sol/Ah8c…RXdRY/oracle</code><span>Example token</span></div>
+<pre>{
+  "version": 1,
+  "network": "sol",
+  "mint": "Ah8c…RXdRY",
+  "asOf": "2026-11-07T18:04:00Z",
+  "reportSha256": "9f2c…e41a",
+  "values": {
+    "networkSupply": "184250",
+    "burnDebtOverdue": 0,
+    …
+  },
+  "message": "AQBzb2wAAAAA…",
+  "signature": "3xQm…Vb9",
+  "signer": "SCRPor4c…Le"
+}</pre>
+        </div>
+        <ul class="snapshot-rules">
+          <li><strong>Every field is a whole number in the signed bytes.</strong> Amounts in the token's base units, shares in basis points, a yes or no as <code>1</code> or <code>0</code>.</li>
+          <li><strong>Fields are only ever added at the end.</strong> None is renamed, moved or redefined, so a program written today keeps working.</li>
+          <li><strong>We sign; the borrower submits.</strong> The lender's program checks our signature with <span translate="no">Solana</span>'s Ed25519 program. The borrower's transaction pays, a fraction of a cent.</li>
+          <li><strong>It names its token, its network and its report.</strong> It can't be replayed for another token, and its SHA-256 ties it to the monthly report attested on <span translate="no">Solana</span>.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="footnote">Draft. The fields are tried on devnet and fixed before the first lender on mainnet relies on them.</p>
+  </section>
+
   <!-- ATTESTATION -->
   <section class="solutions" id="attestation">
     <div class="section-header">
       <span class="section-eyebrow">Attestation</span>
       <h2 class="section-title">Verified once,<br />attested on-chain.</h2>
-      <p class="section-sub">Your verification won't stay in our database. We'll record it on-chain, next to your tokens, so anyone can check it.</p>
+      <p class="section-sub">Your verification doesn't stay in our database. We record it on-chain, next to your tokens, so anyone can check it.</p>
     </div>
     <div class="solutions-grid solutions-grid-two">
       <div class="solution-card">
-        <span class="coming-soon-badge">Coming Soon</span>
+        <span class="coming-soon-badge">Live on Devnet</span>
         <span class="solution-icon" aria-hidden="true">⛓️</span>
         <h3><span translate="no">Solana</span> Attestation Service</h3>
-        <p>Once your business and wallet are verified, we'll issue an attestation to your wallet through the <span translate="no">Solana</span> Attestation Service, so anyone can check on-chain that it belongs to a verified business.</p>
+        <p>Once your business and wallet are verified, we issue an attestation to your wallet through the <span translate="no">Solana</span> Attestation Service, so anyone can check on-chain that it belongs to a verified business.</p>
         <ul class="solution-features">
           <li><span class="check-icon" aria-hidden="true">✓</span> Issued to the wallet you proved is yours</li>
           <li><span class="check-icon" aria-hidden="true">✓</span> Checkable on-chain, with no sign-in</li>
         </ul>
       </div>
       <div class="solution-card">
-        <span class="coming-soon-badge">Coming Soon</span>
-        <span class="solution-icon" aria-hidden="true">🪪</span>
-        <h3><span translate="no">ONCHAINID</span></h3>
-        <p>Your verification as an <span translate="no">ONCHAINID</span> identity, the standard for verified identities on EVM chains, so it can be used beyond <span translate="no">Solana</span>.</p>
+        <span class="coming-soon-badge">Live on Devnet</span>
+        <span class="solution-icon" aria-hidden="true">🧾</span>
+        <h3>Monthly report, fingerprinted</h3>
+        <p>When you publish a month's report, we record its SHA-256 on <span translate="no">Solana</span> against your token, so anyone holding a copy can check it's the one you published.</p>
+        <ul class="solution-features">
+          <li><span class="check-icon" aria-hidden="true">✓</span> Recorded on every network your token is on</li>
+          <li><span class="check-icon" aria-hidden="true">✓</span> Nothing on-chain names your business</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -397,7 +597,7 @@
         <ul>
           <li><a href="/#tokenization">Invoice Tokenization</a></li>
           <li><a href="/#kyb">KYB Standard</a></li>
-          <li><a href="/#report">Daily Token Report</a></li>
+          <li><a href="/#report">Token Report</a></li>
           <li><a href="/books">Books</a></li>
           <li><a href="/books#payments"><span translate="no">USDC</span> Bill Pay</a></li>
         </ul>
