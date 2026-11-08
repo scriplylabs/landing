@@ -4,13 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Scriply — Invoice Tokenization for Crypto Businesses</title>
-  <meta name="description" content="Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public daily report anyone can check.">
+  <meta name="description" content="Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public report anyone can check.">
   <meta name="theme-color" content="#013e3f">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.scriply.io/">
   <meta property="og:site_name" content="Scriply">
   <meta property="og:title" content="Scriply — Your invoices, on-chain">
-  <meta property="og:description" content="Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public daily report anyone can check.">
+  <meta property="og:description" content="Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public report anyone can check.">
   <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
     "name": "Scriply",
     "url": "https://www.scriply.io/",
     "logo": "https://www.scriply.io/apple-touch-icon.png",
-    "description": "Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public daily report anyone can check.",
+    "description": "Turn your invoices into tokens on Solana: real-world assets in your own wallet, backed by a verified business, connected books and a public report anyone can check.",
     "sameAs": [
       "https://x.com/scriplyio",
       "https://t.me/scriplyio",
@@ -63,7 +63,7 @@
     <ul id="nav-links">
       <li><a href="#kyb">KYB Standard</a></li>
       <li><a href="#tokenization">Tokenization</a></li>
-      <li><a href="#report">Daily Report</a></li>
+      <li><a href="#report">Token Report</a></li>
       <li><a href="/books">Books</a></li>
       <li><a href="https://app.scriply.io">Sign In</a></li>
       <li><a href="https://app.scriply.io" class="nav-cta">Try It For Free</a></li>
@@ -116,7 +116,7 @@
         <iframe src="https://www.loom.com/embed/6c1cb89d6f544f93a5ef069754896e89" title="Invoice tokenization demo" loading="lazy" allowfullscreen></iframe>
         <figcaption>
           <h3>Invoice tokenization</h3>
-          <p>Turning tokenization on after verification, tokenizing an invoice and reading its memo on <span translate="no">Solana</span>, and the daily report on every token. 5 min.</p>
+          <p>Turning tokenization on after verification, tokenizing an invoice and reading its memo on <span translate="no">Solana</span>, and the public report on every token. 5 min.</p>
         </figcaption>
       </figure>
     </div>
@@ -290,7 +290,7 @@
       </div>
       <div class="token-fact">
         <h3>Each person, and how they were checked</h3>
-        <p>Verified by a reviewer or a government ID check, and the daily report says which.</p>
+        <p>Verified by a reviewer or a government ID check, and the token's public report says which.</p>
       </div>
       <div class="token-fact">
         <h3>The business checked by a person</h3>
@@ -306,7 +306,7 @@
       </div>
       <div class="token-fact">
         <h3>Revoked in the open</h3>
-        <p>A confirmed sanctions match revokes KYB, stops new tokenizing, and shows in the next day's report.</p>
+        <p>A confirmed sanctions match revokes KYB, stops new tokenizing, and shows on the token's public report.</p>
       </div>
     </div>
   </section>
@@ -353,12 +353,12 @@
     <p class="section-sub" style="text-align:center">Our tokens already work like <span translate="no">Metaplex</span>'s <a href="https://solanacompass.com/news/metaplex-introduces-mpl-3643-a-permissioned-rwa-token-standard-for-tokenized"><span translate="no">MPL-3643</span></a> permissioned RWA standard. We'll adopt it as it opens up, and <span translate="no">ERC-3643</span> on EVM chains.</p>
   </section>
 
-  <!-- DAILY REPORT -->
+  <!-- TOKEN REPORT -->
   <section class="report" id="report">
     <div class="section-header">
-      <span class="section-eyebrow">The Daily Report</span>
+      <span class="section-eyebrow">The Token Report</span>
       <h2 class="section-title">What anyone can check<br />about every token.</h2>
-      <p class="section-sub">When tokenization launches, each token's report will be public by its address: totals, aging and risk, never the invoices or customers.</p>
+      <p class="section-sub">Each token's numbers are public by its address and computed live: totals, aging and risk, never the invoices or customers. Each month the business publishes a report, and its fingerprint is recorded on <span translate="no">Solana</span>.</p>
     </div>
     <div class="report-layout">
       <div class="payload">
@@ -370,9 +370,17 @@
   "network": "sol",
   "tokenAddress": "Ah8cVgnZ8SjPzRtJoCAo26BHBjc4T7xQ6Rsk3apRXdRY",
   "currency": "FIAT_USD",
-  "asOf": "2026-10-06T00:00:00Z",
-  "sha256": "a7eb512136b792d30f616ebe720f5a0c0e079ab99752a26f222faa196f5bd85f",
-  "attestations": { "sol": "3Vj9uCytyrTshBTim1ELkc2RH9cLA9jxUTSyemENPL8oFgfcbBFFL39gsrdLy3z1g4zQaF8tYR1YzZqv8CqiaNhZ" },
+  "asOf": "2026-11-07T18:04:00Z",
+  "latestReport": {
+    "id": "FIAT_USD.2026-10",
+    "mintId": "FIAT_USD",
+    "periodEnd": "2026-10-31",
+    "asOf": "2026-11-03T15:20:41Z",
+    "sha256": "a7eb512136b792d30f616ebe720f5a0c0e079ab99752a26f222faa196f5bd85f",
+    "attestations": [
+      { "network": "sol", "txId": "3Vj9uCytyrTshBTim1ELkc2RH9cLA9jxUTSyemENPL8oFgfcbBFFL39gsrdLy3z1g4zQaF8tYR1YzZqv8CqiaNhZ" }
+    ]
+  },
 
   "supply": "184250",
   "circulatingSupply": "184250",
@@ -403,19 +411,22 @@
       "wallet-verified",
       "ein-confirmed",
       "business-registered"
-    ]
+    ],
+    "lienSearchedAt": "2026-07-12T10:31:05Z"
   },
 
   "risk": {
     "topCustomerShare": "0.22",
     "topFiveShare": "0.71",
     "concentrationIndex": "0.14",
-    "selfIssuedShare": "0.08",
+    "acceptedShare": "0.64",
+    "verifiedAcceptedShare": "0.41",
+    "disputedShare": "0.03",
     "daysToBurn": "41.6",
     "burnedTokenizations": 31,
     "historyDays": 212,
     "settledTokenizations": 37,
-    "flags": ["self-issued-invoices"]
+    "flags": ["customer-disputed-invoices"]
   }
 }</pre>
         <p class="payload-note">Illustrative report for a made-up business. Units are dollars of invoices still owed.</p>
@@ -423,11 +434,11 @@
       <dl class="fields">
         <div>
           <dt>supply · outstandingUnits · reconciled</dt>
-          <dd>Tokens in existence and dollars still owed. They match when the report reconciles.</dd>
+          <dd>Tokens in existence and dollars still owed, on every network. They match when the token reconciles.</dd>
         </div>
         <div>
-          <dt>burnDebt</dt>
-          <dd>Tokens due to burn that couldn't yet. Above zero, the token is under-backed and the business can't tokenize more.</dd>
+          <dt>burnDebt · burnDebtOverdue</dt>
+          <dd>Tokens due to burn that haven't yet. Above zero, the token is under-backed and the business can't tokenize more; overdue once its grace period has passed.</dd>
         </div>
         <div>
           <dt>aging</dt>
@@ -435,15 +446,15 @@
         </div>
         <div>
           <dt>risk</dt>
-          <dd>Customer concentration, self-issued share, time to burn, and flags. We set no thresholds: you judge.</dd>
+          <dd>Customer concentration, how much customers have confirmed or disputed, time to burn, and flags. We set no thresholds: you judge.</dd>
         </div>
         <div>
           <dt>assurance</dt>
           <dd>What we verified about the business, without saying who it is.</dd>
         </div>
         <div>
-          <dt>sha256 · attestations</dt>
-          <dd>The day's report fingerprint, and the <span translate="no">Solana</span> transaction that recorded it.</dd>
+          <dt>latestReport</dt>
+          <dd>The latest monthly report's fingerprint, and the <span translate="no">Solana</span> transaction that recorded it. The live numbers above aren't attested; the report is.</dd>
         </div>
       </dl>
     </div>
@@ -519,24 +530,28 @@
     <div class="section-header">
       <span class="section-eyebrow">Attestation</span>
       <h2 class="section-title">Verified once,<br />attested on-chain.</h2>
-      <p class="section-sub">Your verification won't stay in our database. We'll record it on-chain, next to your tokens, so anyone can check it.</p>
+      <p class="section-sub">Your verification doesn't stay in our database. We record it on-chain, next to your tokens, so anyone can check it.</p>
     </div>
     <div class="solutions-grid solutions-grid-two">
       <div class="solution-card">
-        <span class="coming-soon-badge">Coming Soon</span>
+        <span class="coming-soon-badge">Live on Devnet</span>
         <span class="solution-icon" aria-hidden="true">⛓️</span>
         <h3><span translate="no">Solana</span> Attestation Service</h3>
-        <p>Once your business and wallet are verified, we'll issue an attestation to your wallet through the <span translate="no">Solana</span> Attestation Service, so anyone can check on-chain that it belongs to a verified business.</p>
+        <p>Once your business and wallet are verified, we issue an attestation to your wallet through the <span translate="no">Solana</span> Attestation Service, so anyone can check on-chain that it belongs to a verified business.</p>
         <ul class="solution-features">
           <li><span class="check-icon" aria-hidden="true">✓</span> Issued to the wallet you proved is yours</li>
           <li><span class="check-icon" aria-hidden="true">✓</span> Checkable on-chain, with no sign-in</li>
         </ul>
       </div>
       <div class="solution-card">
-        <span class="coming-soon-badge">Coming Soon</span>
-        <span class="solution-icon" aria-hidden="true">🪪</span>
-        <h3><span translate="no">ONCHAINID</span></h3>
-        <p>Your verification as an <span translate="no">ONCHAINID</span> identity, the standard for verified identities on EVM chains, so it can be used beyond <span translate="no">Solana</span>.</p>
+        <span class="coming-soon-badge">Live on Devnet</span>
+        <span class="solution-icon" aria-hidden="true">🧾</span>
+        <h3>Monthly report, fingerprinted</h3>
+        <p>When you publish a month's report, we record its SHA-256 on <span translate="no">Solana</span> against your token, so anyone holding a copy can check it's the one you published.</p>
+        <ul class="solution-features">
+          <li><span class="check-icon" aria-hidden="true">✓</span> Recorded on every network your token is on</li>
+          <li><span class="check-icon" aria-hidden="true">✓</span> Nothing on-chain names your business</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -582,7 +597,7 @@
         <ul>
           <li><a href="/#tokenization">Invoice Tokenization</a></li>
           <li><a href="/#kyb">KYB Standard</a></li>
-          <li><a href="/#report">Daily Token Report</a></li>
+          <li><a href="/#report">Token Report</a></li>
           <li><a href="/books">Books</a></li>
           <li><a href="/books#payments"><span translate="no">USDC</span> Bill Pay</a></li>
         </ul>
