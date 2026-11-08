@@ -10,6 +10,8 @@
   --white: #ffffff;
   --cream: #f3eee7;
   --cream-light: #f7f4ef;
+  --honey-ink: #8a6a00;
+  --honey-wash: rgba(253, 211, 68, 0.16);
   --text: #002525;
   --text-mid: #242424;
   --muted: #666666;
@@ -940,6 +942,48 @@ footer {
   border-radius: 999px;
 }
 
+/* ── HOW IT WORKS: THE FLOW CHART ── */
+/* One lane per party, one column per stage; borrowing, still planned, in the dashed yellow zone */
+.flow { max-width: 1100px; margin: 0 auto; }
+.flow-scroll { overflow-x: auto; border: 1px solid var(--border-light); border-radius: var(--radius-lg); background: var(--white); padding: 1rem; }
+.flow-scroll svg { display: block; width: 100%; min-width: 880px; height: auto; }
+.flow-scroll .lane-a { fill: var(--white); }
+.flow-scroll .lane-b { fill: var(--brand-light); }
+.flow-scroll .lane-label { fill: var(--muted); font: 600 11px var(--sans); letter-spacing: 0.06em; text-transform: uppercase; }
+.flow-scroll .col-label { fill: var(--brand-mid); font: 700 11px var(--sans); letter-spacing: 0.12em; text-transform: uppercase; }
+.flow-scroll .next-label { fill: var(--honey-ink); font: 700 11px var(--sans); letter-spacing: 0.12em; text-transform: uppercase; }
+.flow-scroll .node { fill: var(--white); stroke: var(--brand-mid); stroke-width: 1.25; }
+.flow-scroll .node-next { fill: var(--white); stroke: var(--honey-ink); stroke-width: 1.25; stroke-dasharray: 4 3; }
+.flow-scroll .t { fill: var(--text); font: 600 13px var(--sans); }
+.flow-scroll .s { fill: var(--muted); font: 400 11px var(--sans); }
+.flow-scroll .edge { fill: none; stroke: var(--brand-mid); stroke-width: 1.5; }
+.flow-scroll .edge-next { fill: none; stroke: var(--honey-ink); stroke-width: 1.5; }
+.flow-scroll .el { fill: var(--text-mid); font: 500 11px var(--sans); }
+.flow-scroll .next-zone { fill: var(--honey-wash); stroke: var(--honey-ink); stroke-width: 1; stroke-dasharray: 5 4; }
+.flow-scroll .ah { fill: var(--brand-mid); }
+.flow-scroll .ah-next { fill: var(--honey-ink); }
+.flow figcaption { text-align: center; color: var(--muted); font-size: 0.9rem; line-height: 1.6; max-width: 640px; margin: 1rem auto 0; }
+.flow-steps-six { grid-template-columns: repeat(3, 1fr); max-width: 1100px; margin-left: auto; margin-right: auto; }
+
+/* ── SIGNED SNAPSHOT ── */
+.snapshot { background: var(--white); padding: 6rem 5%; border-top: 1px solid var(--border-light); }
+.snapshot-badge { margin: 1.25rem 0 0; }
+.snapshot-layout { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: 3rem; max-width: 1100px; margin: 0 auto; align-items: start; }
+.snapshot-table { overflow-x: auto; border: 1px solid var(--border-light); border-radius: var(--radius-lg); background: var(--white); }
+.snapshot-table table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.snapshot-table th, .snapshot-table td { text-align: left; padding: 0.7rem 1rem; border-bottom: 1px solid var(--border-light); vertical-align: top; }
+.snapshot-table tr:last-child td { border-bottom: 0; }
+.snapshot-table th { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); font-weight: 700; }
+.snapshot-table code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.82rem; color: var(--brand-mid); font-weight: 600; white-space: nowrap; }
+.snapshot-table .num { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-variant-numeric: tabular-nums; text-align: right; color: var(--text-mid); white-space: nowrap; }
+.snapshot-table .desc { color: var(--text-mid); line-height: 1.55; }
+.snapshot-table .group td { background: var(--brand-light); font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--brand-mid); font-weight: 700; padding-block: 0.4rem; }
+.snapshot-side { display: flex; flex-direction: column; gap: 1.5rem; min-width: 0; }
+.snapshot-rules { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+.snapshot-rules li { font-size: 0.9rem; color: var(--text-mid); line-height: 1.6; }
+.snapshot-rules strong { color: var(--text); }
+.snapshot-rules code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.82rem; color: var(--brand-mid); }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
@@ -947,7 +991,7 @@ footer {
 }
 
 @media (max-width: 900px) {
-  .solutions-grid, .solutions-grid-two, .chains-grid, .props-grid, .reviews-grid, .roadmap-grid, .token-facts, .report-layout { grid-template-columns: 1fr; }
+  .solutions-grid, .solutions-grid-two, .chains-grid, .props-grid, .reviews-grid, .roadmap-grid, .token-facts, .report-layout, .snapshot-layout { grid-template-columns: 1fr; }
   .flow-steps { grid-template-columns: repeat(2, 1fr); }
   .stats-grid { grid-template-columns: repeat(2, 1fr); }
   .nav-toggle { display: inline-flex; }
