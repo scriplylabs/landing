@@ -984,6 +984,18 @@ footer {
 .snapshot-rules strong { color: var(--text); }
 .snapshot-rules code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.82rem; color: var(--brand-mid); }
 
+/* ── CONTRACTS PAGE ── */
+/* A full-width table with its notes under it; the two-column pages use .snapshot-layout */
+.doc-section { max-width: 1100px; margin: 0 auto; }
+.doc-rules { margin-top: 2rem; }
+.snapshot-table a { text-decoration: none; }
+.snapshot-table a:hover code { text-decoration: underline; }
+/* A program address is long: let it wrap on a phone rather than widen the table */
+.snapshot-table .address code { white-space: normal; overflow-wrap: anywhere; font-weight: 500; }
+.snapshot-rules a { color: var(--brand-mid); font-weight: 600; }
+.not-promised a { color: var(--brand-mid); }
+.section-eyebrow code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; text-transform: none; letter-spacing: 0; font-size: 0.85rem; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
   .footer-grid { grid-template-columns: 1fr 1fr 1fr; }
